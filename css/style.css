@@ -1,0 +1,173 @@
+/* Custom CSS */
+:root{
+    --primary-color: #021024;
+    --secondary-color: #052659;
+    --first-option: #5483b3;
+    --second-option: #7da0ca;
+    --third-option: #c1e8ff;
+    --dark: #31363F;
+    --main-bgcolor: rgb(32, 30, 30);
+}
+
+body{
+    background: linear-gradient(to bottom, var(--third-option), var(--second-option), var(--first-option), var(--secondary-color), var(--primary-color));
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.first-page, #Projects {
+    width: 80%; 
+    height: auto;
+    border: 5px solid transparent; 
+    background-color: var(--main-bgcolor);
+    position: relative; 
+    box-shadow: 0 50px 55px -10px #000;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+/* --------------------nav bar------- */
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    height: 100%;
+}
+
+.nav-item {
+    padding: 0 10px; /* Adjust padding as needed */
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; /* Set the color of the text */
+    text-decoration: none; /* Remove default underline */
+}
+
+.nav-link img {
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+}
+
+.nav-link:hover {
+    transform: translateY(-5px); /* Animation on hover */
+}
+
+.nav-item:hover {
+    transform: translateY(-5px); /* Move the navbar item 5px upwards */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.profile-img img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#About{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.languages img{
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Project cards */
+.project-card {
+    box-shadow: 0 4px 8px 0 var(--second-option);
+    width: 100%; 
+    border-radius: 30px; 
+    margin: 40px auto;
+    background-color: var(--first-option);
+    color: #fff;
+    height: 350px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.project-img{
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Project info buttons */
+.project-info button{
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 120px;
+    height: 40px;
+}
+
+.project-info {
+    flex-grow: 1; 
+}
+
+.view-live{
+    margin-left: 20px;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+button a:hover{
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+/* ------------footer------ */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.socials a {
+    position: relative; 
+}
+
+.socials a img {
+    transition: transform 0.3s ease; 
+}
+
+/* Animation when hovering over the icons */
+.socials a:hover img {
+    transform: translateY(-10px); 
+}
+
+/* Animation when removing cursor from the icons */
+.socials a:not(:hover) img {
+    transform: translateY(0); 
+}
+
+.copyright small {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 10px;
+}
