@@ -17,7 +17,7 @@ body{
     box-sizing: border-box;
 }
 
-.first-page, #Projects {
+.first-page, #Projects, #Contact {
     width: 80%; 
     height: auto;
     border: 5px solid transparent; 
@@ -171,3 +171,42 @@ button a:hover{
     margin-top: 20px;
     margin-right: 10px;
 }
+/* ---------------contact */
+
+#Contact .container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+  }
+    
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #Contact button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #Contact button:hover {
+    background-color: #0056b3;
+  } 
